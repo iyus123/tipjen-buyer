@@ -9,11 +9,9 @@ export default async function ShopPage() {
     .from("products")
     .select("*")
     .eq("is_published", true)
-    .order("updated_at", { ascending: false });
+    .order("created_at", { ascending: false });
 
-  if (error) {
-    throw new Error(error.message);
-  }
+  if (error) throw new Error(error.message);
 
   return (
     <BuyerCatalog
