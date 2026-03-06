@@ -15,9 +15,14 @@ export default async function ShopPage() {
     throw new Error(error.message);
   }
 
+  const products = (data || []).map((item) => ({
+    ...item,
+    published: item.is_published,
+  }));
+
   return (
     <BuyerCatalog
-      products={data || []}
+      products={products}
       storeName={env.storeName}
       whatsappNumber={env.whatsappNumber}
     />
