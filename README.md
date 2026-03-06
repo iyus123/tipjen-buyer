@@ -1,25 +1,16 @@
 # Tipjen Buyer
 
-Web pembeli khusus katalog Tipjen.
+Web buyer terpisah untuk menampilkan katalog toko Tipjen.
 
-## Environment Variables
+## Fitur
+- Tampilan cozy dan modern
+- Hanya menampilkan produk yang published
+- Pencarian cepat
+- Beli langsung via WhatsApp
+- Otomatis sinkron dari dashboard admin Supabase yang sama
 
-Copy `.env.example` ke `.env.local` lalu isi:
-
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- `STORE_NAME`
-- `WHATSAPP_NUMBER`
-
-## Jalankan lokal
-
-```bash
-npm install
-npm run dev
-```
-
-## Deploy Vercel
-
-Upload project ini ke repo GitHub terpisah, lalu import ke Vercel.
-
-Project ini hanya menampilkan produk yang `is_published = true` dari Supabase.
+## Menjalankan lokal
+1. `npm install`
+2. copy `.env.example` menjadi `.env.local`
+3. isi semua environment variable
+4. `npm run dev`
