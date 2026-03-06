@@ -55,7 +55,7 @@ export default function BuyerCatalog({ initialProducts, storeName, whatsappNumbe
     setCart((prev) => prev.map((item) => item.id === id ? { ...item, qty: item.qty + delta } : item).filter((item) => item.qty > 0));
   };
 
-  const removeItem = (id: string) => setCart((prev) => prev.filter((item) => item.id !== id));
+ const removeItem = (id: string | number) => setCart((prev) => prev.filter((item) => item.id !== id));
 
   const checkout = () => {
     const lines = cartItems.map((item, index) => `${index + 1}. ${item.name}%0AJumlah: ${item.qty}%0AHarga: ${new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR", maximumFractionDigits: 0 }).format(item.price)}%0ASubtotal: ${new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR", maximumFractionDigits: 0 }).format(item.subtotal)}`);
