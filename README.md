@@ -1,20 +1,10 @@
 # Tipjen Buyer
 
-Web buyer terpisah untuk toko Tipjen.
+Buyer web untuk toko Tipjen dengan tampilan cozy modern, keranjang belanja, filter kategori, dan checkout via WhatsApp.
 
-## Fitur
-- Tampilan cozy dan modern
-- Search produk
-- Filter kategori
-- Keranjang belanja sebelum checkout
-- Checkout semua item ke WhatsApp
-- Hanya menampilkan produk yang dipublish
+## Environment variables
 
-## Environment Variables
-Lihat `.env.example`.
-
-## Jalankan lokal
-```bash
-npm install
-npm run dev
-```
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `STORE_NAME`
+- `WHATSAPP_NUMBER`
