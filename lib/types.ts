@@ -1,8 +1,8 @@
-export type BuyerProduct = {
-  id: number | string;
+export type Product = {
+  id: string | number;
   name: string;
-  description: string | null;
-  category: string | null;
+  description?: string | null;
+  category?: string | null;
   price: number;
   stock: number;
   image?: string | null;
