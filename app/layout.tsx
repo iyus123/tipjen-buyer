@@ -1,10 +1,9 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { env } from "@/lib/env";
+import './globals.css';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: `${env.storeName} Shop`,
-  description: `Katalog cozy dan modern untuk toko ${env.storeName}`,
+  title: 'Tipjen',
+  description: 'Belanja nyaman di Tipjen.'
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
