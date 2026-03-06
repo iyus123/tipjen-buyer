@@ -1,10 +1,16 @@
 # Tipjen Buyer
 
-Buyer web untuk toko Tipjen dengan tampilan cozy modern, keranjang belanja, filter kategori, dan checkout via WhatsApp.
+Web buyer terpisah yang membaca data dari Supabase yang sama dengan Tipjen Admin.
 
-## Environment variables
+## Fitur
+- Search produk
+- Filter kategori
+- Dark / light mode
+- Keranjang belanja
+- Toast popup saat produk masuk ke keranjang
+- Checkout seluruh keranjang via WhatsApp
 
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- `STORE_NAME`
-- `WHATSAPP_NUMBER`
+## Setup
+1. Salin `.env.example` menjadi `.env.local`
+2. Isi env sesuai project Supabase yang sama dengan admin
+3. Jalankan `npm install` lalu `npm run dev`
