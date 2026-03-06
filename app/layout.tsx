@@ -1,15 +1,19 @@
-import './globals.css';
-import type { Metadata } from 'next';
+import "./globals.css";
+import Script from "next/script";
+import { themeScript } from "@/lib/theme-script";
 
-export const metadata: Metadata = {
-  title: 'Tipjen',
-  description: 'Belanja nyaman di Tipjen.'
+export const metadata = {
+  title: "Tipjen",
+  description: "Web buyer Tipjen",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id">
-      <body>{children}</body>
+    <html lang="id" suppressHydrationWarning>
+      <body>
+        <Script id="theme-script" strategy="beforeInteractive">{themeScript}</Script>
+        {children}
+      </body>
     </html>
   );
 }
