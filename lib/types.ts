@@ -1,19 +1,13 @@
-export type Product = {
-  id: string;
+export type BuyerProduct = {
+  id: number | string;
   name: string;
-  description: string;
-  category: string;
+  description: string | null;
+  category: string | null;
   price: number;
   stock: number;
-  image_url: string;
-  tags: string[];
-  is_published: boolean;
-  created_at: string;
-  updated_at: string;
-};
-
-export type Label = {
-  id: string;
-  name: string;
-  created_at: string;
+  image?: string | null;
+  image_url?: string | null;
+  published?: boolean;
+  is_published?: boolean;
+  tags?: string[];
 };
