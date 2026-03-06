@@ -1,6 +1,6 @@
 import { supabase } from "@/lib/supabase";
 import { env } from "@/lib/env";
-import BuyerCatalog from "@/components/buyer-catalog";
+import BuyerCatalog from "@/@/components/BuyerCatalog";
 
 export const dynamic = "force-dynamic";
 
