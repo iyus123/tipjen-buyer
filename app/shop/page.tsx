@@ -11,7 +11,9 @@ export default async function ShopPage() {
     .eq("is_published", true)
     .order("created_at", { ascending: false });
 
-  if (error) throw new Error(error.message);
+  if (error) {
+    throw new Error(error.message);
+  }
 
   return (
     <BuyerCatalog
