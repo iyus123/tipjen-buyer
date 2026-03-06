@@ -11,9 +11,8 @@ html.dark {
 }
 
 body {
-  @apply bg-brand-cream text-[#4a342b] antialiased;
+  @apply bg-[#f8f2ec] text-[#4a342b] antialiased;
 }
-
 html.dark body {
   @apply bg-slate-950 text-white;
 }
